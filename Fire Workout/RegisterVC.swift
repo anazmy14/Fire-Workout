@@ -9,7 +9,7 @@
 import UIKit
 import FirebaseAuth
 
-class RegisterVC: UIViewController {
+class RegisterVC: UIViewController , UITextFieldDelegate {
 
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
@@ -37,10 +37,19 @@ class RegisterVC: UIViewController {
         }
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        email.resignFirstResponder()
+        password.resignFirstResponder()
+        confirmPassword.resignFirstResponder()
+        return true
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        email.delegate = self
+        password.delegate = self
+        confirmPassword.delegate = self
         
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notification:) ) , name: UIResponder.keyboardWillShowNotification , object: nil )
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notification:) ) , name: UIResponder.keyboardWillHideNotification , object: nil )
@@ -59,15 +68,18 @@ class RegisterVC: UIViewController {
             return
         }
         
+        if notification.name == UIResponder.keyboardWillShowNotification || notification.name == UIResponder.keyboardWillChangeFrameNotification {
         self.view.frame.origin.y = -(keyboardRect.height - (view.frame.height - ( registerBtn.frame.origin.y + registerBtn.frame.height )  )  )
         print(notification.name)
+        }
+        
+        else {
+            self.view.frame.origin.y = 0
+            
+        }
     }
     
 }
-
-
-
-
 
 
 

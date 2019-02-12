@@ -136,6 +136,21 @@
             </objects>
             <point key="canvasLocation" x="-86.25" y="-476.40845070422534"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="u60-hQ-kuN">
+            <objects>
+                <viewController id="bag-wq-u7v" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tSm-qb-aZ1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="5hG-f8-jep"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z06-Rw-0Rf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="811" y="-169"/>
+        </scene>
         <!--RegisterVC-->
         <scene sceneID="YZq-eY-iva">
             <objects>
@@ -144,10 +159,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="3sT-Oa-wm2">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                                <color key="backgroundColor" red="0.25684931509999998" green="0.66438356160000001" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="DW0-IS-UAQ">
                                 <rect key="frame" x="50" y="329" width="275" height="234"/>
                                 <subviews>
@@ -244,6 +255,10 @@
                                     <action selector="register:" destination="xub-Ur-HLe" eventType="touchUpInside" id="CmM-vg-4lH"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="3sT-Oa-wm2">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <color key="backgroundColor" red="0.25684931509999998" green="0.66438356160000001" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
                         </subviews>
                         <color key="tintColor" red="0.19215686269999999" green="0.1137254902" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
