@@ -7,4 +7,5 @@ target 'Fire Workout' do
 
   # Pods for Fire Workout
   pod 'Firebase/Core'
-end
+  pod 'Firebase/Auth'
+  end
