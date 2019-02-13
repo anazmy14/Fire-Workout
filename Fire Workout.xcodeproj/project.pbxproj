@@ -10,6 +10,8 @@
 		A105C62F22145C5000A13AAD /* Muscle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A105C62E22145C5000A13AAD /* Muscle.swift */; };
 		A105C63122145EF900A13AAD /* MuscleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A105C63022145EF900A13AAD /* MuscleCell.swift */; };
 		A105C6332214634300A13AAD /* ExercisesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A105C6322214634300A13AAD /* ExercisesVC.swift */; };
+		A105C63722147EC800A13AAD /* ExerciseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A105C63622147EC800A13AAD /* ExerciseCell.swift */; };
+		A105C6392214967A00A13AAD /* GifVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A105C6382214967A00A13AAD /* GifVC.swift */; };
 		A13EBF47221320B300CA8A8C /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13EBF46221320B300CA8A8C /* LoginVC.swift */; };
 		A13EBF49221320EA00CA8A8C /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13EBF48221320EA00CA8A8C /* RegisterVC.swift */; };
 		A13EBF4B22132C4E00CA8A8C /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13EBF4A22132C4E00CA8A8C /* AuthenticationServices.framework */; };
@@ -34,6 +36,8 @@
 		A105C62E22145C5000A13AAD /* Muscle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Muscle.swift; sourceTree = "<group>"; };
 		A105C63022145EF900A13AAD /* MuscleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuscleCell.swift; sourceTree = "<group>"; };
 		A105C6322214634300A13AAD /* ExercisesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesVC.swift; sourceTree = "<group>"; };
+		A105C63622147EC800A13AAD /* ExerciseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCell.swift; sourceTree = "<group>"; };
+		A105C6382214967A00A13AAD /* GifVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifVC.swift; sourceTree = "<group>"; };
 		A13EBF46221320B300CA8A8C /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		A13EBF48221320EA00CA8A8C /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		A13EBF4A22132C4E00CA8A8C /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
@@ -132,6 +136,7 @@
 				A1675B8322131A8C00380F78 /* ovalButton.swift */,
 				A1A694FD22144ED30047EA62 /* MenuCell.swift */,
 				A105C63022145EF900A13AAD /* MuscleCell.swift */,
+				A105C63622147EC800A13AAD /* ExerciseCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -144,6 +149,7 @@
 				A13EBF51221365C900CA8A8C /* MenuVC.swift */,
 				A13EBF53221365DF00CA8A8C /* MusclesVC.swift */,
 				A105C6322214634300A13AAD /* ExercisesVC.swift */,
+				A105C6382214967A00A13AAD /* GifVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -277,20 +283,24 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Fire Workout/Pods-Fire Workout-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-Fire Workout/Pods-Fire Workout-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fire Workout/Pods-Fire Workout-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fire Workout/Pods-Fire Workout-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -301,10 +311,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1675B8422131A8C00380F78 /* ovalButton.swift in Sources */,
+				A105C6392214967A00A13AAD /* GifVC.swift in Sources */,
 				A13EBF49221320EA00CA8A8C /* RegisterVC.swift in Sources */,
 				A1A694FE22144ED30047EA62 /* MenuCell.swift in Sources */,
 				A13EBF54221365DF00CA8A8C /* MusclesVC.swift in Sources */,
 				A105C63122145EF900A13AAD /* MuscleCell.swift in Sources */,
+				A105C63722147EC800A13AAD /* ExerciseCell.swift in Sources */,
 				A13EBF502213602C00CA8A8C /* SWRevealViewController.m in Sources */,
 				A1675B702213195400380F78 /* AppDelegate.swift in Sources */,
 				A13EBF47221320B300CA8A8C /* LoginVC.swift in Sources */,

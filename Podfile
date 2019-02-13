@@ -8,4 +8,7 @@ target 'Fire Workout' do
   # Pods for Fire Workout
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
+  pod 'Firebase/Database'
+  pod 'Firebase/Storage'
+  pod 'FLAnimatedImage'
   end

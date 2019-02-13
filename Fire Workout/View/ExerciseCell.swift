@@ -1,5 +1,5 @@
 //
-//  MuscleCell.swift
+//  ExerciseCell.swift
 //  Fire Workout
 //
 //  Created by an on 2/13/19.
@@ -8,13 +8,13 @@
 
 import UIKit
 
-class MuscleCell: UITableViewCell {
-    @IBOutlet weak var img: UIImageView!
-    
-    @IBOutlet weak var title: UILabel!
+class ExerciseCell: UITableViewCell {
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+       
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -23,13 +23,4 @@ class MuscleCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
-}
-
-extension UIImageView {
-    
-    func setRounded() {
-        let radius = self.frame.width / 2
-        self.layer.cornerRadius = radius
-        self.layer.masksToBounds = true
-    }
 }

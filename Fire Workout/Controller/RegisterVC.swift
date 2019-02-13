@@ -30,7 +30,7 @@ class RegisterVC: UIViewController , UITextFieldDelegate {
                }
                     
                 else {
-                    
+                    self.performSegue(withIdentifier: "to_muscles1", sender: self)
                 }
         }
        

@@ -21,7 +21,7 @@ class LoginVC: UIViewController , UITextFieldDelegate  {
                     displayError(message: error!.localizedDescription , controller: self)
                 }
                 else {
-                    
+                    self.performSegue(withIdentifier: "to_muscles", sender: self)
                 }
                 
             }

@@ -8,7 +8,19 @@
 
 import UIKit
 
-class MusclesVC: UIViewController , UITableViewDataSource , UITableViewDelegate{
+protocol chosenMuscle {
+    var muscle:Muscle {get set}
+}
+
+class MusclesVC: UIViewController , UITableViewDataSource , UITableViewDelegate , chosenMuscle {
+   
+ 
+    @IBOutlet weak var menuBtn: UIButton!
+    @IBOutlet weak var table: UITableView!
+    var muscle: Muscle = .biceps
+
+    
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
       return  DataService.instance.getMuscles().count
         
@@ -22,10 +34,20 @@ class MusclesVC: UIViewController , UITableViewDataSource , UITableViewDelegate{
         
     }
     
-
-    @IBOutlet weak var menuBtn: UIButton!
     
-    @IBOutlet weak var table: UITableView!
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "to_exercises" {
+            let ExercisesVC = segue.destination as! ExercisesVC
+            ExercisesVC.delegate = self
+        }
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+           muscle = DataService.instance.getMuscles()[indexPath.row]
+           performSegue(withIdentifier: "to_exercises", sender: self)
+    }
+   
+
+
     
     
     override func viewDidLoad() {
