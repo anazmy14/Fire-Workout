@@ -10,9 +10,12 @@
 		A13EBF47221320B300CA8A8C /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13EBF46221320B300CA8A8C /* LoginVC.swift */; };
 		A13EBF49221320EA00CA8A8C /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13EBF48221320EA00CA8A8C /* RegisterVC.swift */; };
 		A13EBF4B22132C4E00CA8A8C /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13EBF4A22132C4E00CA8A8C /* AuthenticationServices.framework */; };
+		A13EBF502213602C00CA8A8C /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A13EBF4F2213602C00CA8A8C /* SWRevealViewController.m */; };
+		A13EBF52221365C900CA8A8C /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13EBF51221365C900CA8A8C /* MenuVC.swift */; };
+		A13EBF54221365DF00CA8A8C /* ExercisesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13EBF53221365DF00CA8A8C /* ExercisesVC.swift */; };
+		A13EBF5A221370E500CA8A8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A13EBF59221370E400CA8A8C /* Assets.xcassets */; };
 		A1675B702213195400380F78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1675B6F2213195400380F78 /* AppDelegate.swift */; };
 		A1675B752213195400380F78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1675B732213195400380F78 /* Main.storyboard */; };
-		A1675B772213195500380F78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1675B762213195500380F78 /* Assets.xcassets */; };
 		A1675B7A2213195500380F78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1675B782213195500380F78 /* LaunchScreen.storyboard */; };
 		A1675B8222131A3300380F78 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1675B8122131A3300380F78 /* GoogleService-Info.plist */; };
 		A1675B8422131A8C00380F78 /* ovalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1675B8322131A8C00380F78 /* ovalButton.swift */; };
@@ -26,10 +29,15 @@
 		A13EBF48221320EA00CA8A8C /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		A13EBF4A22132C4E00CA8A8C /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
 		A13EBF4C22132C4E00CA8A8C /* Fire Workout.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Fire Workout.entitlements"; sourceTree = "<group>"; };
+		A13EBF4D2213602A00CA8A8C /* Fire Workout-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Fire Workout-Bridging-Header.h"; sourceTree = "<group>"; };
+		A13EBF4E2213602C00CA8A8C /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		A13EBF4F2213602C00CA8A8C /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		A13EBF51221365C900CA8A8C /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
+		A13EBF53221365DF00CA8A8C /* ExercisesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesVC.swift; sourceTree = "<group>"; };
+		A13EBF59221370E400CA8A8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1675B6C2213195400380F78 /* Fire Workout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fire Workout.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1675B6F2213195400380F78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1675B742213195400380F78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A1675B762213195500380F78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1675B792213195500380F78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1675B7B2213195500380F78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1675B8122131A3300380F78 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -91,14 +99,19 @@
 			children = (
 				A13EBF4C22132C4E00CA8A8C /* Fire Workout.entitlements */,
 				A1675B8322131A8C00380F78 /* ovalButton.swift */,
+				A13EBF4E2213602C00CA8A8C /* SWRevealViewController.h */,
+				A13EBF4F2213602C00CA8A8C /* SWRevealViewController.m */,
 				A1675B6F2213195400380F78 /* AppDelegate.swift */,
 				A1675B732213195400380F78 /* Main.storyboard */,
-				A1675B762213195500380F78 /* Assets.xcassets */,
+				A13EBF59221370E400CA8A8C /* Assets.xcassets */,
 				A1675B782213195500380F78 /* LaunchScreen.storyboard */,
 				A1675B7B2213195500380F78 /* Info.plist */,
 				A1675B8122131A3300380F78 /* GoogleService-Info.plist */,
 				A13EBF46221320B300CA8A8C /* LoginVC.swift */,
 				A13EBF48221320EA00CA8A8C /* RegisterVC.swift */,
+				A13EBF4D2213602A00CA8A8C /* Fire Workout-Bridging-Header.h */,
+				A13EBF51221365C900CA8A8C /* MenuVC.swift */,
+				A13EBF53221365DF00CA8A8C /* ExercisesVC.swift */,
 			);
 			path = "Fire Workout";
 			sourceTree = "<group>";
@@ -137,6 +150,7 @@
 				TargetAttributes = {
 					A1675B6B2213195400380F78 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 						SystemCapabilities = {
 							com.apple.AutoFillCredentialProvider = {
 								enabled = 1;
@@ -173,7 +187,7 @@
 			files = (
 				A1675B7A2213195500380F78 /* LaunchScreen.storyboard in Resources */,
 				A1675B8222131A3300380F78 /* GoogleService-Info.plist in Resources */,
-				A1675B772213195500380F78 /* Assets.xcassets in Resources */,
+				A13EBF5A221370E500CA8A8C /* Assets.xcassets in Resources */,
 				A1675B752213195400380F78 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -230,8 +244,11 @@
 			files = (
 				A1675B8422131A8C00380F78 /* ovalButton.swift in Sources */,
 				A13EBF49221320EA00CA8A8C /* RegisterVC.swift in Sources */,
+				A13EBF54221365DF00CA8A8C /* ExercisesVC.swift in Sources */,
+				A13EBF502213602C00CA8A8C /* SWRevealViewController.m in Sources */,
 				A1675B702213195400380F78 /* AppDelegate.swift in Sources */,
 				A13EBF47221320B300CA8A8C /* LoginVC.swift in Sources */,
+				A13EBF52221365C900CA8A8C /* MenuVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +395,7 @@
 			baseConfigurationReference = DB406ECAFB132B562BD9D92F /* Pods-Fire Workout.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "Fire Workout/Fire Workout.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QS7UYPB8DA;
@@ -388,6 +406,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "fire-workout.Fire-Workout";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Fire Workout/Fire Workout-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -398,6 +418,7 @@
 			baseConfigurationReference = 9E8C10367BC166BF7A6FC84E /* Pods-Fire Workout.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "Fire Workout/Fire Workout.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QS7UYPB8DA;
@@ -408,6 +429,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "fire-workout.Fire-Workout";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Fire Workout/Fire Workout-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
