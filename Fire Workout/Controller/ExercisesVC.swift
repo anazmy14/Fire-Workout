@@ -1,14 +1,14 @@
 //
-//  MenuVC.swift
+//  ExercisesVC.swift
 //  Fire Workout
 //
-//  Created by an on 2/12/19.
+//  Created by an on 2/13/19.
 //  Copyright © 2019 an. All rights reserved.
 //
 
 import UIKit
 
-class MenuVC: UIViewController {
+class ExercisesVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

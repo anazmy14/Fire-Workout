@@ -7,24 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A105C62F22145C5000A13AAD /* Muscle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A105C62E22145C5000A13AAD /* Muscle.swift */; };
+		A105C63122145EF900A13AAD /* MuscleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A105C63022145EF900A13AAD /* MuscleCell.swift */; };
+		A105C6332214634300A13AAD /* ExercisesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A105C6322214634300A13AAD /* ExercisesVC.swift */; };
 		A13EBF47221320B300CA8A8C /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13EBF46221320B300CA8A8C /* LoginVC.swift */; };
 		A13EBF49221320EA00CA8A8C /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13EBF48221320EA00CA8A8C /* RegisterVC.swift */; };
 		A13EBF4B22132C4E00CA8A8C /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13EBF4A22132C4E00CA8A8C /* AuthenticationServices.framework */; };
 		A13EBF502213602C00CA8A8C /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A13EBF4F2213602C00CA8A8C /* SWRevealViewController.m */; };
 		A13EBF52221365C900CA8A8C /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13EBF51221365C900CA8A8C /* MenuVC.swift */; };
-		A13EBF54221365DF00CA8A8C /* ExercisesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13EBF53221365DF00CA8A8C /* ExercisesVC.swift */; };
+		A13EBF54221365DF00CA8A8C /* MusclesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13EBF53221365DF00CA8A8C /* MusclesVC.swift */; };
 		A13EBF5A221370E500CA8A8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A13EBF59221370E400CA8A8C /* Assets.xcassets */; };
 		A1675B702213195400380F78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1675B6F2213195400380F78 /* AppDelegate.swift */; };
 		A1675B752213195400380F78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1675B732213195400380F78 /* Main.storyboard */; };
 		A1675B7A2213195500380F78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1675B782213195500380F78 /* LaunchScreen.storyboard */; };
 		A1675B8222131A3300380F78 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1675B8122131A3300380F78 /* GoogleService-Info.plist */; };
 		A1675B8422131A8C00380F78 /* ovalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1675B8322131A8C00380F78 /* ovalButton.swift */; };
+		A1A694FE22144ED30047EA62 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A694FD22144ED30047EA62 /* MenuCell.swift */; };
+		A1A69505221451E90047EA62 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A69504221451E90047EA62 /* Exercise.swift */; };
+		A1A695082214538D0047EA62 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A695072214538D0047EA62 /* DataService.swift */; };
 		D9C33757CC8D1DF37D739E72 /* Pods_Fire_Workout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40B0CCCF06411F66C4296EED /* Pods_Fire_Workout.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		40B0CCCF06411F66C4296EED /* Pods_Fire_Workout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fire_Workout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E8C10367BC166BF7A6FC84E /* Pods-Fire Workout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fire Workout.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fire Workout/Pods-Fire Workout.release.xcconfig"; sourceTree = "<group>"; };
+		A105C62E22145C5000A13AAD /* Muscle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Muscle.swift; sourceTree = "<group>"; };
+		A105C63022145EF900A13AAD /* MuscleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuscleCell.swift; sourceTree = "<group>"; };
+		A105C6322214634300A13AAD /* ExercisesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesVC.swift; sourceTree = "<group>"; };
 		A13EBF46221320B300CA8A8C /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		A13EBF48221320EA00CA8A8C /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		A13EBF4A22132C4E00CA8A8C /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
@@ -33,7 +42,7 @@
 		A13EBF4E2213602C00CA8A8C /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		A13EBF4F2213602C00CA8A8C /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		A13EBF51221365C900CA8A8C /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
-		A13EBF53221365DF00CA8A8C /* ExercisesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesVC.swift; sourceTree = "<group>"; };
+		A13EBF53221365DF00CA8A8C /* MusclesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusclesVC.swift; sourceTree = "<group>"; };
 		A13EBF59221370E400CA8A8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1675B6C2213195400380F78 /* Fire Workout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fire Workout.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1675B6F2213195400380F78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +51,9 @@
 		A1675B7B2213195500380F78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1675B8122131A3300380F78 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A1675B8322131A8C00380F78 /* ovalButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ovalButton.swift; sourceTree = "<group>"; };
+		A1A694FD22144ED30047EA62 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuCell.swift; path = "/Users/an/Desktop/Fire Workout/Fire Workout/View/MenuCell.swift"; sourceTree = "<absolute>"; };
+		A1A69504221451E90047EA62 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		A1A695072214538D0047EA62 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		DB406ECAFB132B562BD9D92F /* Pods-Fire Workout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fire Workout.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fire Workout/Pods-Fire Workout.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,23 +109,69 @@
 		A1675B6E2213195400380F78 /* Fire Workout */ = {
 			isa = PBXGroup;
 			children = (
+				A1A695062214536D0047EA62 /* Services  */,
+				A13EBF4D2213602A00CA8A8C /* Fire Workout-Bridging-Header.h */,
+				A1A69503221451AC0047EA62 /* Model */,
+				A1A6950222144F430047EA62 /* Supporting Files */,
+				A1A6950122144F170047EA62 /* Controller */,
+				A1A694FC22144E970047EA62 /* View */,
 				A13EBF4C22132C4E00CA8A8C /* Fire Workout.entitlements */,
-				A1675B8322131A8C00380F78 /* ovalButton.swift */,
-				A13EBF4E2213602C00CA8A8C /* SWRevealViewController.h */,
-				A13EBF4F2213602C00CA8A8C /* SWRevealViewController.m */,
 				A1675B6F2213195400380F78 /* AppDelegate.swift */,
 				A1675B732213195400380F78 /* Main.storyboard */,
 				A13EBF59221370E400CA8A8C /* Assets.xcassets */,
 				A1675B782213195500380F78 /* LaunchScreen.storyboard */,
 				A1675B7B2213195500380F78 /* Info.plist */,
 				A1675B8122131A3300380F78 /* GoogleService-Info.plist */,
-				A13EBF46221320B300CA8A8C /* LoginVC.swift */,
-				A13EBF48221320EA00CA8A8C /* RegisterVC.swift */,
-				A13EBF4D2213602A00CA8A8C /* Fire Workout-Bridging-Header.h */,
-				A13EBF51221365C900CA8A8C /* MenuVC.swift */,
-				A13EBF53221365DF00CA8A8C /* ExercisesVC.swift */,
 			);
 			path = "Fire Workout";
+			sourceTree = "<group>";
+		};
+		A1A694FC22144E970047EA62 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A1675B8322131A8C00380F78 /* ovalButton.swift */,
+				A1A694FD22144ED30047EA62 /* MenuCell.swift */,
+				A105C63022145EF900A13AAD /* MuscleCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A1A6950122144F170047EA62 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A13EBF46221320B300CA8A8C /* LoginVC.swift */,
+				A13EBF48221320EA00CA8A8C /* RegisterVC.swift */,
+				A13EBF51221365C900CA8A8C /* MenuVC.swift */,
+				A13EBF53221365DF00CA8A8C /* MusclesVC.swift */,
+				A105C6322214634300A13AAD /* ExercisesVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A1A6950222144F430047EA62 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A13EBF4F2213602C00CA8A8C /* SWRevealViewController.m */,
+				A13EBF4E2213602C00CA8A8C /* SWRevealViewController.h */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A1A69503221451AC0047EA62 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A1A69504221451E90047EA62 /* Exercise.swift */,
+				A105C62E22145C5000A13AAD /* Muscle.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A1A695062214536D0047EA62 /* Services  */ = {
+			isa = PBXGroup;
+			children = (
+				A1A695072214538D0047EA62 /* DataService.swift */,
+			);
+			path = "Services ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,11 +302,17 @@
 			files = (
 				A1675B8422131A8C00380F78 /* ovalButton.swift in Sources */,
 				A13EBF49221320EA00CA8A8C /* RegisterVC.swift in Sources */,
-				A13EBF54221365DF00CA8A8C /* ExercisesVC.swift in Sources */,
+				A1A694FE22144ED30047EA62 /* MenuCell.swift in Sources */,
+				A13EBF54221365DF00CA8A8C /* MusclesVC.swift in Sources */,
+				A105C63122145EF900A13AAD /* MuscleCell.swift in Sources */,
 				A13EBF502213602C00CA8A8C /* SWRevealViewController.m in Sources */,
 				A1675B702213195400380F78 /* AppDelegate.swift in Sources */,
 				A13EBF47221320B300CA8A8C /* LoginVC.swift in Sources */,
+				A105C62F22145C5000A13AAD /* Muscle.swift in Sources */,
+				A105C6332214634300A13AAD /* ExercisesVC.swift in Sources */,
 				A13EBF52221365C900CA8A8C /* MenuVC.swift in Sources */,
+				A1A69505221451E90047EA62 /* Exercise.swift in Sources */,
+				A1A695082214538D0047EA62 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
