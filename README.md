@@ -1,7 +1,9 @@
 # Fire-Workout
 
 Workout assistant iOS app 
+
 Firebase(Auth/Database/Storage)
+
 FLAnimatedImage dependency to deal with GIFs  
 
 
