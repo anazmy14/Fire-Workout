@@ -28,9 +28,7 @@ class MenuVC: UIViewController, UITableViewDelegate , UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == DataService.instance.getMenuItems().count-1 {
-            let email =  UserDefaults.standard.string(forKey: "user")
-            let _ : Bool = KeychainWrapper.standard.removeObject(forKey: email!)
-            UserDefaults.standard.removeObject(forKey: "user")
+            AuthService.deleteCurrentUser()
             dismiss(animated: true, completion: nil)
             
         }

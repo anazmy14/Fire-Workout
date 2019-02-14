@@ -27,6 +27,7 @@
 		A1A694FE22144ED30047EA62 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A694FD22144ED30047EA62 /* MenuCell.swift */; };
 		A1A69505221451E90047EA62 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A69504221451E90047EA62 /* Exercise.swift */; };
 		A1A695082214538D0047EA62 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A695072214538D0047EA62 /* DataService.swift */; };
+		A1BD476C2215B9EA00FA901E /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BD476B2215B9EA00FA901E /* AuthService.swift */; };
 		D9C33757CC8D1DF37D739E72 /* Pods_Fire_Workout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40B0CCCF06411F66C4296EED /* Pods_Fire_Workout.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		A1A694FD22144ED30047EA62 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuCell.swift; path = "/Users/an/Desktop/Fire Workout/Fire Workout/View/MenuCell.swift"; sourceTree = "<absolute>"; };
 		A1A69504221451E90047EA62 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 		A1A695072214538D0047EA62 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		A1BD476B2215B9EA00FA901E /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		DB406ECAFB132B562BD9D92F /* Pods-Fire Workout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fire Workout.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fire Workout/Pods-Fire Workout.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -176,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				A1A695072214538D0047EA62 /* DataService.swift */,
+				A1BD476B2215B9EA00FA901E /* AuthService.swift */,
 			);
 			path = "Services ";
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 				A13EBF52221365C900CA8A8C /* MenuVC.swift in Sources */,
 				A1A69505221451E90047EA62 /* Exercise.swift in Sources */,
 				A1A695082214538D0047EA62 /* DataService.swift in Sources */,
+				A1BD476C2215B9EA00FA901E /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

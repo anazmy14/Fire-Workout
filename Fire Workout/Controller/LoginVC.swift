@@ -23,8 +23,7 @@ class LoginVC: UIViewController , UITextFieldDelegate  {
                     displayError(message: error!.localizedDescription , controller: self)
                 }
                 else {
-                    let _: Bool = KeychainWrapper.standard.set(self.password.text! , forKey: self.email.text!)
-                    UserDefaults.standard.set(self.email.text , forKey: "user")
+                    AuthService.saveCurrentUser( email : self.email.text! , password : self.password.text!  )
                     self.performSegue(withIdentifier: "to_muscles", sender: self)
                 }
                 
