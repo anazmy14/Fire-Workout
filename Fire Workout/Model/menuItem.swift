@@ -13,10 +13,12 @@ struct menuItem {
     
     var title:String
     var img:String
+    var storyboardID:String
     
-    init( title:String , img:String ) {
+    init( title:String , img:String , storyboardID:String ) {
         self.title = title
-        self.img = img      
+        self.img = img
+        self.storyboardID = storyboardID
          }
         
     

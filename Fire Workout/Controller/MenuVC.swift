@@ -33,6 +33,13 @@ class MenuVC: UIViewController, UITableViewDelegate , UITableViewDataSource {
             
         }
         
+        else {
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: DataService.instance.getMenuItems()[indexPath.row].storyboardID)
+          
+                self.present(vc!, animated: true, completion: nil)
+         
+        }
+        
     }
     
     override func viewDidLoad() {

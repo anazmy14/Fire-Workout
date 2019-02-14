@@ -11,7 +11,7 @@ import Foundation
 class DataService {
     
     static let instance = DataService()
-    private let menuItems = [ menuItem(title: "Exercises", img: "exercises"), menuItem(title: "Plans", img: "plans") , menuItem(title: "Custom", img: "custom") , menuItem(title: "Logout", img: "logout")  ]
+    private let menuItems = [ menuItem(title: "Exercises", img: "exercises" , storyboardID : "SWReveal" ), menuItem(title: "Plans", img: "plans" , storyboardID: "plansVC"  ) , menuItem(title: "Custom", img: "custom" , storyboardID : "customVC"   ) , menuItem(title: "Logout", img: "logout" , storyboardID : ""  )  ]
     private let muscles:[Muscle] = [.back , .abs , .chest , .biceps , .triceps , .legs   ]
     func getMenuItems() -> [menuItem] {
         return menuItems
