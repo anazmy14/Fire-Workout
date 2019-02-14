@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftKeychainWrapper
 
 class MenuVC: UIViewController, UITableViewDelegate , UITableViewDataSource {
     
@@ -14,17 +15,27 @@ class MenuVC: UIViewController, UITableViewDelegate , UITableViewDataSource {
 
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return DataService.instance.getExercises().count
+        return DataService.instance.getMenuItems().count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = table.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! MenuCell
-        cell.img.image = UIImage(named: DataService.instance.getExercises()[indexPath.row].img )
-        cell.title.text = DataService.instance.getExercises()[indexPath.row].title
+        cell.img.image = UIImage(named: DataService.instance.getMenuItems()[indexPath.row].img )
+        cell.title.text = DataService.instance.getMenuItems()[indexPath.row].title
         return cell
         
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == DataService.instance.getMenuItems().count-1 {
+            let email =  UserDefaults.standard.string(forKey: "user")
+            let _ : Bool = KeychainWrapper.standard.removeObject(forKey: email!)
+            UserDefaults.standard.removeObject(forKey: "user")
+            dismiss(animated: true, completion: nil)
+            
+        }
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

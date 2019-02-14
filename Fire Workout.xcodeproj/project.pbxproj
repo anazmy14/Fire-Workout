@@ -113,12 +113,12 @@
 		A1675B6E2213195400380F78 /* Fire Workout */ = {
 			isa = PBXGroup;
 			children = (
-				A1A695062214536D0047EA62 /* Services  */,
 				A13EBF4D2213602A00CA8A8C /* Fire Workout-Bridging-Header.h */,
 				A1A69503221451AC0047EA62 /* Model */,
-				A1A6950222144F430047EA62 /* Supporting Files */,
 				A1A6950122144F170047EA62 /* Controller */,
 				A1A694FC22144E970047EA62 /* View */,
+				A1A695062214536D0047EA62 /* Services  */,
+				A1A6950222144F430047EA62 /* Supporting Files */,
 				A13EBF4C22132C4E00CA8A8C /* Fire Workout.entitlements */,
 				A1675B6F2213195400380F78 /* AppDelegate.swift */,
 				A1675B732213195400380F78 /* Main.storyboard */,
@@ -287,6 +287,7 @@
 				"${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -295,6 +296,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);

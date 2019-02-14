@@ -8,6 +8,8 @@
 
 import UIKit
 import Firebase
+import SwiftKeychainWrapper
+import FirebaseAuth
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -17,6 +19,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
+        if let user = UserDefaults.standard.string(forKey: "user") {
+        let retrievedPassword: String? = KeychainWrapper.standard.string(forKey: user)
+            print(user + retrievedPassword!)
+            
+            Auth.auth().signIn(withEmail: user, password: retrievedPassword!) { ( result , error ) in
+                if error == nil {
+                    print("22")
+                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                    let homeVC = storyboard.instantiateViewController(withIdentifier: "SWReveal") as! SWRevealViewController
+                    self.window?.rootViewController = homeVC
+                }
+            }
+        }
+      
         return true
     }
 

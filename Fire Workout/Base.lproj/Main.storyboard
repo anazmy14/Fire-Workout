@@ -12,7 +12,7 @@
         <!--LoginVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginVC" customModule="Fire_Workout" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginVC" id="BYZ-38-t0r" customClass="LoginVC" customModule="Fire_Workout" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -139,7 +139,7 @@
         <!--Reveal View Controller-->
         <scene sceneID="u60-hQ-kuN">
             <objects>
-                <viewController id="bag-wq-u7v" customClass="SWRevealViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SWReveal" id="bag-wq-u7v" customClass="SWRevealViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tSm-qb-aZ1" customClass="SWRevealView">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -158,7 +158,7 @@
         <!--MusclesVC-->
         <scene sceneID="ILq-zZ-fHY">
             <objects>
-                <viewController id="0ou-8p-1Kk" customClass="MusclesVC" customModule="Fire_Workout" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="musclesVC" id="0ou-8p-1Kk" customClass="MusclesVC" customModule="Fire_Workout" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="93K-gw-Pl6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -659,6 +659,6 @@
         <image name="return" width="192" height="192"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ndB-I2-COb"/>
+        <segue reference="Ebd-gW-aAd"/>
     </inferredMetricsTieBreakers>
 </document>

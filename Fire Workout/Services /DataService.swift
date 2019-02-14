@@ -11,10 +11,10 @@ import Foundation
 class DataService {
     
     static let instance = DataService()
-    private let exercises = [ exercise(title: "Exercises", img: "exercises"), exercise(title: "Plans", img: "plans") , exercise(title: "Custom", img: "custom")   ]
+    private let menuItems = [ menuItem(title: "Exercises", img: "exercises"), menuItem(title: "Plans", img: "plans") , menuItem(title: "Custom", img: "custom") , menuItem(title: "Logout", img: "logout")  ]
     private let muscles:[Muscle] = [.back , .abs , .chest , .biceps , .triceps , .legs   ]
-    func getExercises() -> [exercise] {
-        return exercises
+    func getMenuItems() -> [menuItem] {
+        return menuItems
     }
     func getMuscles() -> [Muscle] {
         return muscles

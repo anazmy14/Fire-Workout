@@ -11,4 +11,5 @@ target 'Fire Workout' do
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
   pod 'FLAnimatedImage'
+  pod 'SwiftKeychainWrapper'
   end

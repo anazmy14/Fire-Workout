@@ -8,12 +8,14 @@
 
 import UIKit
 import FirebaseAuth
+import SwiftKeychainWrapper
 
 class LoginVC: UIViewController , UITextFieldDelegate  {
 
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var loginBtn: UIStackView!
+    
     @IBAction func login(_ sender: Any) {
         if email.text != "" || password.text != ""  {
             Auth.auth().signIn(withEmail: email.text! , password: password.text!) { (result , error ) in
@@ -21,6 +23,8 @@ class LoginVC: UIViewController , UITextFieldDelegate  {
                     displayError(message: error!.localizedDescription , controller: self)
                 }
                 else {
+                    let _: Bool = KeychainWrapper.standard.set(self.password.text! , forKey: self.email.text!)
+                    UserDefaults.standard.set(self.email.text , forKey: "user")
                     self.performSegue(withIdentifier: "to_muscles", sender: self)
                 }
                 
