@@ -12,7 +12,8 @@ class MenuCell: UITableViewCell {
    
     @IBOutlet weak var img:UIImageView!
     @IBOutlet weak var title:UILabel!
-
+    @IBOutlet weak var days: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -23,6 +23,8 @@ class PlansVC: UIViewController , UITableViewDelegate , UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = table.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! MenuCell
+        cell.title.text = plans[indexPath.row].name
+        cell.days.text = "\(plans[indexPath.row].numOfDays)" + " Days/week"
         return cell
     }
     
