@@ -13,8 +13,12 @@ class PlansVC: UIViewController , UITableViewDelegate , UITableViewDataSource {
     @IBOutlet weak var table: UITableView!
     @IBOutlet weak var menuBtn: UIButton!
     
+    var level:PlanLevel = .beginner
+    var plans:[Plan] = []
+    
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return plans.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -34,6 +38,7 @@ class PlansVC: UIViewController , UITableViewDelegate , UITableViewDataSource {
         menuBtn.addTarget(self.revealViewController(), action:#selector(SWRevealViewController.revealToggle(_:)) , for: .touchUpInside )
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer() )
         self.view.addGestureRecognizer(self.revealViewController().tapGestureRecognizer())
+        plans = DataService.instance.getPlans(level: level)
         table.delegate = self
         table.dataSource = self
         addSegmentControl()
@@ -44,7 +49,18 @@ class PlansVC: UIViewController , UITableViewDelegate , UITableViewDataSource {
     
     @IBAction func controlValueChanged( control : BetterSegmentedControl ) {
         
-        print(control.index)
+        switch control.index {
+        case 1 :
+            level = .intermediate
+        case 2 :
+            level = .advanced
+        default:
+            level = .beginner
+
+        }
+        
+       plans = DataService.instance.getPlans(level: level)
+       table.reloadData()
         
     }
     
@@ -55,7 +71,7 @@ class PlansVC: UIViewController , UITableViewDelegate , UITableViewDataSource {
     segments: LabelSegment.segments(withTitles: ["Beginner", "Intermediate", "Advanced"],
     normalFont: UIFont(name: "HelveticaNeue-Light", size: 19.0)!,
     normalTextColor: .white ,
-    selectedFont: UIFont(name: "HelveticaNeue-Bold", size: 22.0)!,
+    selectedFont: UIFont(name: "HelveticaNeue-Bold", size: 21.0)!,
     selectedTextColor: bgColor ),
     index: 0,
     options: [.backgroundColor(bgColor ),

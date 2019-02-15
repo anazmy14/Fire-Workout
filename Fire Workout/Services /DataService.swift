@@ -11,14 +11,34 @@ import Foundation
 class DataService {
     
     static let instance = DataService()
-    private let menuItems = [ menuItem(title: "Exercises", img: "exercises" , storyboardID : "SWReveal" ), menuItem(title: "Plans", img: "plans" , storyboardID: "plansVC"  ) , menuItem(title: "Custom", img: "custom" , storyboardID : "customVC"   ) , menuItem(title: "Logout", img: "logout" , storyboardID : ""  )  ]
+    private let menuItems = [ MenuItem(title: "Exercises", img: "exercises" , storyboardID : "SWReveal" ), MenuItem(title: "Plans", img: "plans" , storyboardID: "plansVC"  ) , MenuItem(title: "Custom", img: "custom" , storyboardID : "customVC"   ) , MenuItem(title: "Logout", img: "logout" , storyboardID : ""  )  ]
     private let muscles:[Muscle] = [.back , .abs , .chest , .biceps , .triceps , .legs   ]
-    func getMenuItems() -> [menuItem] {
+    private let beginnerPlans:[Plan] = [ Plan( name: "Beginner full body workout routine" , numOfDays : 3  ) ]
+    private let intermediatePlans:[Plan] = []
+    private let advancedPlans:[Plan] = []
+    
+    func getMenuItems() -> [MenuItem] {
         return menuItems
     }
     func getMuscles() -> [Muscle] {
         return muscles
     }
+    
+    func getPlans  (level:PlanLevel ) -> [Plan] {
+        
+        switch level {
+        case .intermediate :
+            return intermediatePlans
+        case  .advanced :
+            return advancedPlans
+        default :
+            return beginnerPlans
+            
+        }
+        
+        
+    }
+    
     
     
 }
