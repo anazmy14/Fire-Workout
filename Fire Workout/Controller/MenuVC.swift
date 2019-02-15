@@ -29,14 +29,16 @@ class MenuVC: UIViewController, UITableViewDelegate , UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == DataService.instance.getMenuItems().count-1 {
             AuthService.deleteCurrentUser()
-            dismiss(animated: true, completion: nil)
-            
+            self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
+
         }
         
         else {
             let vc = self.storyboard?.instantiateViewController(withIdentifier: DataService.instance.getMenuItems()[indexPath.row].storyboardID)
+            
+            self.revealViewController()?.pushFrontViewController(vc!, animated: true)
           
-                self.present(vc!, animated: true, completion: nil)
+           
          
         }
         
