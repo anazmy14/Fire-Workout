@@ -27,7 +27,7 @@ class MusclesVC: UIViewController , UITableViewDataSource , UITableViewDelegate 
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! MuscleCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! MenuCell
         cell.img.image = UIImage(named: DataService.instance.getMuscles()[indexPath.row].rawValue )
         cell.title.text = DataService.instance.getMuscles()[indexPath.row].rawValue.uppercased()
         return cell

@@ -31,7 +31,7 @@ class ExercisesVC: UIViewController , UITableViewDelegate , UITableViewDataSourc
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-     let cell = table.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! MuscleCell
+     let cell = table.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! MenuCell
         cell.img.setRounded()
         cell.img.downloadImage(muscle: muscle.rawValue , index: indexPath.row )
         cell.title.text = exercises[indexPath.row]

@@ -17,10 +17,14 @@ class AuthService {
     }
     
     static func deleteCurrentUser ( ) {
-        let email =  UserDefaults.standard.string(forKey:
-            "user")
-        let _ : Bool = KeychainWrapper.standard.removeObject(forKey: email!)
+        if let email =  UserDefaults.standard.string(forKey:
+            "user") {
+            
+            let _ : Bool = KeychainWrapper.standard.removeObject(forKey: email)
             UserDefaults.standard.removeObject(forKey: "user")
+            
+        }
+      
         
         
     }

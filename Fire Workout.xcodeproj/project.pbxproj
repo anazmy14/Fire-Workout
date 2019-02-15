@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A105C62F22145C5000A13AAD /* Muscle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A105C62E22145C5000A13AAD /* Muscle.swift */; };
-		A105C63122145EF900A13AAD /* MuscleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A105C63022145EF900A13AAD /* MuscleCell.swift */; };
 		A105C6332214634300A13AAD /* ExercisesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A105C6322214634300A13AAD /* ExercisesVC.swift */; };
-		A105C63722147EC800A13AAD /* ExerciseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A105C63622147EC800A13AAD /* ExerciseCell.swift */; };
 		A105C6392214967A00A13AAD /* GifVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A105C6382214967A00A13AAD /* GifVC.swift */; };
 		A13EBF47221320B300CA8A8C /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13EBF46221320B300CA8A8C /* LoginVC.swift */; };
 		A13EBF49221320EA00CA8A8C /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13EBF48221320EA00CA8A8C /* RegisterVC.swift */; };
@@ -24,6 +22,7 @@
 		A1675B7A2213195500380F78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1675B782213195500380F78 /* LaunchScreen.storyboard */; };
 		A1675B8222131A3300380F78 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1675B8122131A3300380F78 /* GoogleService-Info.plist */; };
 		A1675B8422131A8C00380F78 /* ovalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1675B8322131A8C00380F78 /* ovalButton.swift */; };
+		A19C01DD221719F800AB52EA /* PlansVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19C01DC221719F800AB52EA /* PlansVC.swift */; };
 		A1A694FE22144ED30047EA62 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A694FD22144ED30047EA62 /* MenuCell.swift */; };
 		A1A69505221451E90047EA62 /* menuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A69504221451E90047EA62 /* menuItem.swift */; };
 		A1A695082214538D0047EA62 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A695072214538D0047EA62 /* DataService.swift */; };
@@ -35,9 +34,7 @@
 		40B0CCCF06411F66C4296EED /* Pods_Fire_Workout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fire_Workout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E8C10367BC166BF7A6FC84E /* Pods-Fire Workout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fire Workout.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fire Workout/Pods-Fire Workout.release.xcconfig"; sourceTree = "<group>"; };
 		A105C62E22145C5000A13AAD /* Muscle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Muscle.swift; sourceTree = "<group>"; };
-		A105C63022145EF900A13AAD /* MuscleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuscleCell.swift; sourceTree = "<group>"; };
 		A105C6322214634300A13AAD /* ExercisesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesVC.swift; sourceTree = "<group>"; };
-		A105C63622147EC800A13AAD /* ExerciseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCell.swift; sourceTree = "<group>"; };
 		A105C6382214967A00A13AAD /* GifVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifVC.swift; sourceTree = "<group>"; };
 		A13EBF46221320B300CA8A8C /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		A13EBF48221320EA00CA8A8C /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
@@ -56,6 +53,7 @@
 		A1675B7B2213195500380F78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1675B8122131A3300380F78 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A1675B8322131A8C00380F78 /* ovalButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ovalButton.swift; sourceTree = "<group>"; };
+		A19C01DC221719F800AB52EA /* PlansVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlansVC.swift; sourceTree = "<group>"; };
 		A1A694FD22144ED30047EA62 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuCell.swift; path = "/Users/an/Desktop/Fire Workout/Fire Workout/View/MenuCell.swift"; sourceTree = "<absolute>"; };
 		A1A69504221451E90047EA62 /* menuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = menuItem.swift; sourceTree = "<group>"; };
 		A1A695072214538D0047EA62 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
@@ -137,8 +135,6 @@
 			children = (
 				A1675B8322131A8C00380F78 /* ovalButton.swift */,
 				A1A694FD22144ED30047EA62 /* MenuCell.swift */,
-				A105C63022145EF900A13AAD /* MuscleCell.swift */,
-				A105C63622147EC800A13AAD /* ExerciseCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -152,6 +148,7 @@
 				A13EBF53221365DF00CA8A8C /* MusclesVC.swift */,
 				A105C6322214634300A13AAD /* ExercisesVC.swift */,
 				A105C6382214967A00A13AAD /* GifVC.swift */,
+				A19C01DC221719F800AB52EA /* PlansVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -320,12 +317,11 @@
 				A13EBF49221320EA00CA8A8C /* RegisterVC.swift in Sources */,
 				A1A694FE22144ED30047EA62 /* MenuCell.swift in Sources */,
 				A13EBF54221365DF00CA8A8C /* MusclesVC.swift in Sources */,
-				A105C63122145EF900A13AAD /* MuscleCell.swift in Sources */,
-				A105C63722147EC800A13AAD /* ExerciseCell.swift in Sources */,
 				A13EBF502213602C00CA8A8C /* SWRevealViewController.m in Sources */,
 				A1675B702213195400380F78 /* AppDelegate.swift in Sources */,
 				A13EBF47221320B300CA8A8C /* LoginVC.swift in Sources */,
 				A105C62F22145C5000A13AAD /* Muscle.swift in Sources */,
+				A19C01DD221719F800AB52EA /* PlansVC.swift in Sources */,
 				A105C6332214634300A13AAD /* ExercisesVC.swift in Sources */,
 				A13EBF52221365C900CA8A8C /* MenuVC.swift in Sources */,
 				A1A69505221451E90047EA62 /* menuItem.swift in Sources */,

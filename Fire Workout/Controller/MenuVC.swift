@@ -28,6 +28,7 @@ class MenuVC: UIViewController, UITableViewDelegate , UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == DataService.instance.getMenuItems().count-1 {
+            
             AuthService.deleteCurrentUser()
             self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
 
