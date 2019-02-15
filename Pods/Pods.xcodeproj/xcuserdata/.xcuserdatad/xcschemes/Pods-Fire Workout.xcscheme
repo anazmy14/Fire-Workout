@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F1D58F99FBE9C62C1761FD4E7D4298C9"
+               BlueprintIdentifier = "E0F6FFDC98F02BA69840A3489B16F262"
                BlueprintName = "Pods-Fire Workout"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "Pods-Fire Workout.framework">

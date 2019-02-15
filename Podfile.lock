@@ -1,4 +1,5 @@
 PODS:
+  - BetterSegmentedControl (1.0.3)
   - Firebase/Auth (5.16.0):
     - Firebase/CoreOnly
     - FirebaseAuth (= 5.3.0)
@@ -77,6 +78,7 @@ PODS:
   - SwiftKeychainWrapper (3.2.0)
 
 DEPENDENCIES:
+  - BetterSegmentedControl (~> 1.0)
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
@@ -86,6 +88,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - BetterSegmentedControl
     - Firebase
     - FirebaseAnalytics
     - FirebaseAuth
@@ -103,6 +106,7 @@ SPEC REPOS:
     - SwiftKeychainWrapper
 
 SPEC CHECKSUMS:
+  BetterSegmentedControl: 4e3bd0bd517b0f6077c9e17f5663a01cff48e2c5
   Firebase: 749a8ff4962f9d8c79dda1966de20f6f77583d67
   FirebaseAnalytics: d35d47c03c50c73c14a7fd31463c5775843e78a9
   FirebaseAuth: c9b3ff063c223d2841d97240af547ce511bce19a
@@ -119,6 +123,6 @@ SPEC CHECKSUMS:
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   SwiftKeychainWrapper: 82c4c02cdc36f9a24f7edfcaab3e336401caa1a1
 
-PODFILE CHECKSUM: 47fb9fcc4418390936b38667f8546f340cb0fcaf
+PODFILE CHECKSUM: d32e4b5aec17690c23b04fdf74b6f53a8c3df9d7
 
 COCOAPODS: 1.5.2

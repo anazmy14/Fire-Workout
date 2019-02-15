@@ -12,4 +12,5 @@ target 'Fire Workout' do
   pod 'Firebase/Storage'
   pod 'FLAnimatedImage'
   pod 'SwiftKeychainWrapper'
+  pod 'BetterSegmentedControl', '~> 1.0'
   end
