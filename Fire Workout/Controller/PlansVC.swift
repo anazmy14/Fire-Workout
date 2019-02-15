@@ -25,6 +25,8 @@ class PlansVC: UIViewController , UITableViewDelegate , UITableViewDataSource {
         let cell = table.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! MenuCell
         cell.title.text = plans[indexPath.row].name
         cell.days.text = "\(plans[indexPath.row].numOfDays)" + " Days/week"
+        cell.img.layer.borderWidth = 2
+        cell.img.layer.borderColor = UIColor.gray.cgColor
         return cell
     }
     
