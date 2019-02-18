@@ -9,7 +9,7 @@
 import Foundation
 
 
-struct menuItem {
+struct MenuItem {
     
     var title:String
     var img:String
