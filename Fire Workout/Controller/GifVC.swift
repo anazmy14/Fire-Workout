@@ -11,7 +11,7 @@ import FirebaseStorage
 import FLAnimatedImage
 
 class GifVC: UIViewController  {
-    var delegate:chosenExercise?
+    var delegate:ChooseExercise?
     var exerciseId: String = "biceps0"
     var muscle:Muscle = .biceps
     

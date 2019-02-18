@@ -11,14 +11,14 @@ import FirebaseDatabase
 import FirebaseStorage
 
 
-protocol chosenExercise  {
+protocol ChooseExercise  {
     var muscle:Muscle {get set}
     var exerciseId:String {get set}
 }
 
 
 
-class ExercisesVC: UIViewController , UITableViewDelegate , UITableViewDataSource , chosenExercise  {
+class ExercisesVC: UIViewController , UITableViewDelegate , UITableViewDataSource , ChooseExercise  {
     @IBOutlet weak var muscleName: UILabel!
     @IBOutlet weak var table: UITableView!
     var delegate:chosenMuscle?
@@ -33,7 +33,7 @@ class ExercisesVC: UIViewController , UITableViewDelegate , UITableViewDataSourc
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
      let cell = table.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! MenuCell
         cell.img.setRounded()
-        cell.img.downloadImage(muscle: muscle.rawValue , index: indexPath.row )
+        cell.img.getImage(muscle: muscle.rawValue , index: indexPath.row )
         cell.title.text = exercises[indexPath.row]
         
         return cell
@@ -46,7 +46,8 @@ class ExercisesVC: UIViewController , UITableViewDelegate , UITableViewDataSourc
             GifVC.delegate = self
         }
     }
-        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
      
         exerciseId = muscle.rawValue + "\(indexPath.row)"
         performSegue(withIdentifier: "to_gif", sender: self)
@@ -89,7 +90,7 @@ class ExercisesVC: UIViewController , UITableViewDelegate , UITableViewDataSourc
 
     extension UIImageView  {
         
-        func downloadImage ( muscle:String , index:Int    )
+        func getImage ( muscle:String , index:Int    )
         {
             let ref = Storage.storage().reference().child(muscle+"JPG").child("\(muscle)\(index).jpg")
             

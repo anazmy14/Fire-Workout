@@ -9,14 +9,20 @@
 import UIKit
 import BetterSegmentedControl
 
-class PlansVC: UIViewController , UITableViewDelegate , UITableViewDataSource {
+protocol ChoosePlan {
+    var selectedPlan:Plan? {set get }
+}
+
+
+class PlansVC: UIViewController , UITableViewDelegate , UITableViewDataSource , ChoosePlan  {
+    
     @IBOutlet weak var table: UITableView!
     @IBOutlet weak var menuBtn: UIButton!
     
     var level:PlanLevel = .beginner
     var plans:[Plan] = []
-    
-    
+    var selectedPlan:Plan?
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return plans.count
     }
@@ -30,10 +36,20 @@ class PlansVC: UIViewController , UITableViewDelegate , UITableViewDataSource {
         return cell
     }
     
+    
 
-  
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedPlan = plans[indexPath.row]
+        performSegue(withIdentifier: "to_days", sender: self)
+    }
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "to_days"{
+            let daysVC = segue.destination as! DaysVC
+            daysVC.delegate = self
+        }
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

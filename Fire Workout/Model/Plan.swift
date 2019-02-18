@@ -11,11 +11,14 @@ import Foundation
 struct Plan {
     
     var name:String
+    var days:[Day]
     var numOfDays:Int
+
     
-    init( name:String , numOfDays:Int) {
+    init( name:String , days:[Day] ) {
         self.name = name
-        self.numOfDays = numOfDays
+        self.days = days
+        self.numOfDays = days.count
     }
     
    
