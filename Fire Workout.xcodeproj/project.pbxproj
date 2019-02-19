@@ -31,6 +31,7 @@
 		A1C1DC67221B160B00CC2F56 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C1DC66221B160B00CC2F56 /* MenuCell.swift */; };
 		A1C1DC69221B16D100CC2F56 /* DaysVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C1DC68221B16D100CC2F56 /* DaysVC.swift */; };
 		A1C1DC6D221B32CC00CC2F56 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C1DC6C221B32CC00CC2F56 /* Day.swift */; };
+		A1E338A2221C727500AFCD2D /* CustomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E338A1221C727500AFCD2D /* CustomVC.swift */; };
 		D9C33757CC8D1DF37D739E72 /* Pods_Fire_Workout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40B0CCCF06411F66C4296EED /* Pods_Fire_Workout.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +67,7 @@
 		A1C1DC66221B160B00CC2F56 /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuCell.swift; path = ../../../MenuCell.swift; sourceTree = "<group>"; };
 		A1C1DC68221B16D100CC2F56 /* DaysVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysVC.swift; sourceTree = "<group>"; };
 		A1C1DC6C221B32CC00CC2F56 /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
+		A1E338A1221C727500AFCD2D /* CustomVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVC.swift; sourceTree = "<group>"; };
 		DB406ECAFB132B562BD9D92F /* Pods-Fire Workout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fire Workout.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fire Workout/Pods-Fire Workout.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -158,6 +160,7 @@
 				A105C6382214967A00A13AAD /* GifVC.swift */,
 				A19C01DC221719F800AB52EA /* PlansVC.swift */,
 				A1C1DC68221B16D100CC2F56 /* DaysVC.swift */,
+				A1E338A1221C727500AFCD2D /* CustomVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A19C01DF221745E600AB52EA /* Plan.swift in Sources */,
+				A1E338A2221C727500AFCD2D /* CustomVC.swift in Sources */,
 				A1675B8422131A8C00380F78 /* ovalButton.swift in Sources */,
 				A105C6392214967A00A13AAD /* GifVC.swift in Sources */,
 				A13EBF49221320EA00CA8A8C /* RegisterVC.swift in Sources */,

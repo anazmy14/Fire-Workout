@@ -38,13 +38,8 @@ class DaysVC: UIViewController , UITableViewDelegate , UITableViewDataSource , C
         lbl.textColor = .white
         lbl.font = UIFont(name: "HelveticaNeue-Bold" , size: 17)
         lbl.textAlignment = .center
-        
-        for i in 0...plan!.days.count {
-            if section == i {
-                lbl.text = plan!.days[i].day
-                return lbl
-            }
-        }
+        lbl.text = "  Day \(section+1)"
+
         
         return lbl
     }
