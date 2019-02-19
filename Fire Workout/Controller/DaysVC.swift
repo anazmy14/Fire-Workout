@@ -87,6 +87,7 @@ class DaysVC: UIViewController , UITableViewDelegate , UITableViewDataSource , C
     }
     @IBAction func set(_ sender: Any) {
         setBtn.isEnabled = false
+        UserDefaults.standard.setValue(plan!.name , forKey: "active plan")
         
     }
     
@@ -95,6 +96,12 @@ class DaysVC: UIViewController , UITableViewDelegate , UITableViewDataSource , C
         table.delegate = self
         table.dataSource = self
         plan = delegate?.selectedPlan
+        if let activePlan = UserDefaults.standard.object(forKey: "active plan") as? String {
+            if activePlan == plan!.name {
+                setBtn.isEnabled = false
+            }
+        }
+        
         
 
     }
