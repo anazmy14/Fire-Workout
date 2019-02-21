@@ -9,73 +9,113 @@
 import UIKit
 
 class CustomVC: UIViewController , UITableViewDelegate , UITableViewDataSource{
-    
+    var sections:[Section] = []
     var plan = Plan(name: "", days: [])
     var numOfDays = 0
     @IBOutlet weak var addBtn: ovalButton!
     
+    @IBOutlet weak var menuBtn: UIButton!
+    
+ 
+    
     @IBAction func addDay(_ sender: Any) {
         numOfDays += 1
+        sections.append(Section())
         if numOfDays == 7 {
             addBtn.isEnabled = false
         }
-        
         table.reloadData()
         
     }
     @IBOutlet weak var table: UITableView!
     
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 60
-    }
-     
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let view = UIView()
-        let lbl  = UILabel(frame: CGRect(x: 0 , y: 5, width: 100 , height: 40))
-        lbl.textColor = .white
-        lbl.font = UIFont(name: "HelveticaNeue-Bold" , size: 17)
-        lbl.textAlignment = .left
-        
-        lbl.text = "  Day \(section+1)"
-        view.addSubview(lbl)
-        view.backgroundColor = UIColor(red : 0/255 , green: 84/255 , blue: 147/255 , alpha: 1.0)
-        return view
-    }
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return numOfDays
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        if (sections[section].isOpened == false ) {
         return 1
+        }
+        else {
+            return sections[section].exerciseID.count+2
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! MenuCell
-        if (indexPath.row + 1 == tableView.numberOfRows(inSection: indexPath.section)  )  {
-            let btn = UIButton()
-            btn.frame = CGRect(x: addBtn.frame.origin.x, y: cell.img.frame.origin.y, width: addBtn.frame.width, height: addBtn.frame.height)
-            btn.setBackgroundImage(UIImage(named: "green") , for: .normal)
-            btn.setTitle("Add Exercise", for: .normal)
-            cell.addSubview(btn)
+        
+        if (indexPath.row == 0) {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "section_cell", for: indexPath) as! MenuCell
+            cell.title.text = "Day \(indexPath.section+1)"
+            if (sections[indexPath.section].isOpened) {
+                cell.img.image = UIImage(named: "downArrow")
+            }
+            else {
+                cell.img.image = UIImage(named: "rightArrow")
+            }
+            return cell
+
         }
-        return cell
+        else if (indexPath.row == sections[indexPath.section].exerciseID.count+1) {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "add_cell", for: indexPath) as! AddExerciseCell
+            cell.add.addTarget(self, action: #selector(addExercise(_:)), for: .touchUpInside)
+            
+            return cell
+        }
+        
+        
+        else {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! MenuCell
+        cell.title.text = "exercise"
+        cell.img.image = UIImage(named: "back")
+            return cell
+        }
+     
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if (indexPath.row == 0) {
+            if (sections[indexPath.section].isOpened) {
+            sections[indexPath.section].isOpened = false
+            }
+        
+            else {
+                sections[indexPath.section].isOpened = true
+            }
+            table.reloadSections( [indexPath.section] , with: UITableView.RowAnimation.fade )
+          }
+            
+        else {
+            
+            
+            
+        }
+    }
+    
+    @IBAction func addExercise (_ sender: Any) {
+       print("hi")
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        menuBtn.addTarget(self.revealViewController(), action:#selector(SWRevealViewController.revealToggle(_:)) , for: .touchUpInside )
+        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer() )
+        self.view.addGestureRecognizer(self.revealViewController().tapGestureRecognizer())
         table.delegate = self
         table.dataSource = self
+        
     }
     
 
-    /*
-    // MARK: - Navigation
+  
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+extension CustomVC {
+    struct Section {
+        var isOpened = false
+        var exerciseID:[String] = []
+        
+        }
 }

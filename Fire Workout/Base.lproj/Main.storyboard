@@ -666,7 +666,7 @@
                                             <constraint firstAttribute="height" constant="54" id="hYY-gr-lX5"/>
                                             <constraint firstAttribute="width" constant="55" id="mqx-GX-oqi"/>
                                         </constraints>
-                                        <state key="normal" image="return"/>
+                                        <state key="normal" image="menu"/>
                                         <connections>
                                             <action selector="back:" destination="NuT-Lx-zWa" eventType="touchUpInside" id="wGj-7O-Ycf"/>
                                         </connections>
@@ -706,8 +706,42 @@
                                 <rect key="frame" x="0.0" y="205" width="375" height="607"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="section_cell" rowHeight="43" id="jVM-Ab-mbA" customClass="MenuCell" customModule="Fire_Workout" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="43"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jVM-Ab-mbA" id="Oqi-iN-iR2">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="42.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yzV-Gd-HNI">
+                                                    <rect key="frame" x="15.000000000000004" y="9.3333333333333357" width="49.333333333333343" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rightArrow" translatesAutoresizingMaskIntoConstraints="NO" id="hM1-nk-Mu9">
+                                                    <rect key="frame" x="340" y="11.333333333333336" width="20" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="RaC-gu-06k"/>
+                                                        <constraint firstAttribute="width" constant="20" id="mES-eK-PGM"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="hM1-nk-Mu9" firstAttribute="centerY" secondItem="Oqi-iN-iR2" secondAttribute="centerY" id="BEg-WA-UHH"/>
+                                                <constraint firstAttribute="trailing" secondItem="hM1-nk-Mu9" secondAttribute="trailing" constant="15" id="RW9-xt-rUr"/>
+                                                <constraint firstItem="yzV-Gd-HNI" firstAttribute="centerY" secondItem="Oqi-iN-iR2" secondAttribute="centerY" id="TD9-Rn-o97"/>
+                                                <constraint firstItem="yzV-Gd-HNI" firstAttribute="leading" secondItem="Oqi-iN-iR2" secondAttribute="leading" constant="15" id="kcF-Cz-Cx6"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="img" destination="hM1-nk-Mu9" id="6ur-Fx-AZ7"/>
+                                            <outlet property="title" destination="yzV-Gd-HNI" id="ytc-vB-gge"/>
+                                        </connections>
+                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="165" id="v00-2T-cQo" customClass="MenuCell" customModule="Fire_Workout" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="165"/>
+                                        <rect key="frame" x="0.0" y="71" width="375" height="165"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="v00-2T-cQo" id="hRx-qI-ikA">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="164.66666666666666"/>
@@ -742,6 +776,35 @@
                                             <outlet property="title" destination="o5T-Ml-PKb" id="brG-Kk-CpS"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="add_cell" rowHeight="64" id="Z3p-Cs-j5p" customClass="AddExerciseCell" customModule="Fire_Workout" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="236" width="375" height="64"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Z3p-Cs-j5p" id="oYP-XZ-1v3">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="63.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1M-1L-LgT" customClass="ovalButton" customModule="Fire_Workout" customModuleProvider="target">
+                                                    <rect key="frame" x="120" y="10.333333333333336" width="135" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="135" id="kYR-g4-9lD"/>
+                                                        <constraint firstAttribute="height" constant="50" id="wtZ-8K-Kmp"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                                    <state key="normal" title="+Add exercise" backgroundImage="green">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="y1M-1L-LgT" firstAttribute="centerX" secondItem="oYP-XZ-1v3" secondAttribute="centerX" id="EuS-vh-dZ2"/>
+                                                <constraint firstAttribute="bottom" secondItem="y1M-1L-LgT" secondAttribute="bottom" constant="10" id="Xbb-SP-PqC"/>
+                                                <constraint firstItem="y1M-1L-LgT" firstAttribute="top" secondItem="oYP-XZ-1v3" secondAttribute="top" constant="10" id="ama-Ls-rHb"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="add" destination="y1M-1L-LgT" id="LEX-OE-Fl8"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
@@ -761,6 +824,7 @@
                     </view>
                     <connections>
                         <outlet property="addBtn" destination="drg-7P-x5r" id="1yD-Qr-lTK"/>
+                        <outlet property="menuBtn" destination="95l-ZW-icX" id="OsE-hj-CYv"/>
                         <outlet property="table" destination="c52-Nj-NNu" id="KAC-Tq-a3K"/>
                     </connections>
                 </viewController>
@@ -1017,6 +1081,7 @@
         <image name="logo" width="152.8800048828125" height="109.19999694824219"/>
         <image name="menu" width="2000" height="2000"/>
         <image name="return" width="192" height="192"/>
+        <image name="rightArrow" width="200" height="200"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="ndB-I2-COb"/>

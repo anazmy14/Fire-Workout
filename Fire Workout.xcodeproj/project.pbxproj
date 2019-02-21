@@ -16,7 +16,6 @@
 		A13EBF502213602C00CA8A8C /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A13EBF4F2213602C00CA8A8C /* SWRevealViewController.m */; };
 		A13EBF52221365C900CA8A8C /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13EBF51221365C900CA8A8C /* MenuVC.swift */; };
 		A13EBF54221365DF00CA8A8C /* MusclesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13EBF53221365DF00CA8A8C /* MusclesVC.swift */; };
-		A13EBF5A221370E500CA8A8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A13EBF59221370E400CA8A8C /* Assets.xcassets */; };
 		A1675B702213195400380F78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1675B6F2213195400380F78 /* AppDelegate.swift */; };
 		A1675B752213195400380F78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1675B732213195400380F78 /* Main.storyboard */; };
 		A1675B7A2213195500380F78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1675B782213195500380F78 /* LaunchScreen.storyboard */; };
@@ -27,6 +26,8 @@
 		A19C01E1221749C900AB52EA /* PlanLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19C01E0221749C900AB52EA /* PlanLevel.swift */; };
 		A1A69505221451E90047EA62 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A69504221451E90047EA62 /* MenuItem.swift */; };
 		A1A695082214538D0047EA62 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A695072214538D0047EA62 /* DataService.swift */; };
+		A1A759F8221EFC53006A9322 /* AddExerciseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A759F7221EFC53006A9322 /* AddExerciseCell.swift */; };
+		A1A759FA221F0430006A9322 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1A759F9221F0430006A9322 /* Assets.xcassets */; };
 		A1BD476C2215B9EA00FA901E /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BD476B2215B9EA00FA901E /* AuthService.swift */; };
 		A1C1DC67221B160B00CC2F56 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C1DC66221B160B00CC2F56 /* MenuCell.swift */; };
 		A1C1DC69221B16D100CC2F56 /* DaysVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C1DC68221B16D100CC2F56 /* DaysVC.swift */; };
@@ -50,7 +51,6 @@
 		A13EBF4F2213602C00CA8A8C /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		A13EBF51221365C900CA8A8C /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
 		A13EBF53221365DF00CA8A8C /* MusclesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusclesVC.swift; sourceTree = "<group>"; };
-		A13EBF59221370E400CA8A8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1675B6C2213195400380F78 /* Fire Workout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fire Workout.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1675B6F2213195400380F78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1675B742213195400380F78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -63,6 +63,8 @@
 		A19C01E0221749C900AB52EA /* PlanLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanLevel.swift; sourceTree = "<group>"; };
 		A1A69504221451E90047EA62 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		A1A695072214538D0047EA62 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		A1A759F7221EFC53006A9322 /* AddExerciseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExerciseCell.swift; sourceTree = "<group>"; };
+		A1A759F9221F0430006A9322 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1BD476B2215B9EA00FA901E /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		A1C1DC66221B160B00CC2F56 /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuCell.swift; path = ../../../MenuCell.swift; sourceTree = "<group>"; };
 		A1C1DC68221B16D100CC2F56 /* DaysVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysVC.swift; sourceTree = "<group>"; };
@@ -129,10 +131,10 @@
 				A1A694FC22144E970047EA62 /* View */,
 				A1A695062214536D0047EA62 /* Services  */,
 				A1A6950222144F430047EA62 /* Supporting Files */,
+				A1A759F9221F0430006A9322 /* Assets.xcassets */,
 				A13EBF4C22132C4E00CA8A8C /* Fire Workout.entitlements */,
 				A1675B6F2213195400380F78 /* AppDelegate.swift */,
 				A1675B732213195400380F78 /* Main.storyboard */,
-				A13EBF59221370E400CA8A8C /* Assets.xcassets */,
 				A1675B782213195500380F78 /* LaunchScreen.storyboard */,
 				A1675B7B2213195500380F78 /* Info.plist */,
 				A1675B8122131A3300380F78 /* GoogleService-Info.plist */,
@@ -145,6 +147,7 @@
 			children = (
 				A1C1DC66221B160B00CC2F56 /* MenuCell.swift */,
 				A1675B8322131A8C00380F78 /* ovalButton.swift */,
+				A1A759F7221EFC53006A9322 /* AddExerciseCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -266,7 +269,7 @@
 			files = (
 				A1675B7A2213195500380F78 /* LaunchScreen.storyboard in Resources */,
 				A1675B8222131A3300380F78 /* GoogleService-Info.plist in Resources */,
-				A13EBF5A221370E500CA8A8C /* Assets.xcassets in Resources */,
+				A1A759FA221F0430006A9322 /* Assets.xcassets in Resources */,
 				A1675B752213195400380F78 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,6 +351,7 @@
 				A1C1DC6D221B32CC00CC2F56 /* Day.swift in Sources */,
 				A1A695082214538D0047EA62 /* DataService.swift in Sources */,
 				A1C1DC67221B160B00CC2F56 /* MenuCell.swift in Sources */,
+				A1A759F8221EFC53006A9322 /* AddExerciseCell.swift in Sources */,
 				A1BD476C2215B9EA00FA901E /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
